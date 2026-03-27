@@ -642,15 +642,24 @@ LeerDescription:
 	done
 
 StringShotDescription:
-	text "A move that lowers"
-	next "the foe's Speed."
+	text "Sharply lowers the"
+	next "foe's Speed."
 	done
 
 SmokescreenDescription:
+if DEF(FAITHFUL)
 FlashDescription:
+endc
 	text "A move that lowers"
 	next "the foe's accuracy."
 	done
+
+if !DEF(FAITHFUL)
+FlashDescription:
+	text "Sharply lowers the"
+	next "foe's accuracy."
+	done
+endc
 
 CharmDescription:
 	text "Sharply lowers the"

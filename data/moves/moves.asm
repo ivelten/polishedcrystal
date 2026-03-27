@@ -217,7 +217,11 @@ endc
 	move WATER_PULSE,     EFFECT_CONFUSE_HIT,        60, WATER,     100, 20,  20, SPECIAL
 	move DIZZY_PUNCH,     EFFECT_CONFUSE_HIT,        70, NORMAL,    100, 10,  20, PHYSICAL
 	move SPORE,           EFFECT_SLEEP,               0, GRASS,     100, 15,   0, STATUS
+if DEF(FAITHFUL)
 	move FLASH,           EFFECT_ACCURACY_DOWN,       0, NORMAL,    100, 20,   0, STATUS
+else
+	move FLASH,           EFFECT_ACCURACY_DOWN_2,     0, NORMAL,     95, 10,   0, STATUS
+endc
 	move EXTRASENSORY,    EFFECT_FLINCH_HIT,         80, PSYCHIC,   100, 20,  10, SPECIAL
 	move SPLASH,          EFFECT_SPLASH,              0, NORMAL,     -1, 40,   0, STATUS
 	move DRAGON_DANCE,    EFFECT_DRAGON_DANCE,        0, DRAGON,    100, 20,   0, STATUS
