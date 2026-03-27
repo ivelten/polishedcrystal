@@ -50,6 +50,7 @@ bank_ends.txt
 *.sn*
 *.sa*
 *.sg1
+*.s1
 
 # vim configuration
 # http://www.vim.org/scripts/script.php?script_id=441
@@ -65,3 +66,9 @@ bank_ends.txt
 # local tools
 rgbds/
 deploy.sh
+
+# Claude
+.claude/settings.local.json
+
+# Other
+tools/parsemap.h.pch
