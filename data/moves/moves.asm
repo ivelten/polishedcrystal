@@ -18,7 +18,11 @@ Moves::
 	move DOUBLE_SLAP,     EFFECT_MULTI_HIT,          15, NORMAL,     85, 10,   0, PHYSICAL
 	move AERIAL_ACE,      EFFECT_ALWAYS_HIT,         60, FLYING,     -1, 20,   0, PHYSICAL
 	move DRAGON_CLAW,     EFFECT_NORMAL_HIT,         80, DRAGON,    100, 15,   0, PHYSICAL
+if DEF(FAITHFUL)
 	move PAY_DAY,         EFFECT_PAY_DAY,            40, NORMAL,    100, 20,   0, PHYSICAL
+else
+	move PAY_DAY,         EFFECT_PAY_DAY,            60, NORMAL,    100, 20,   0, PHYSICAL
+endc
 	move FIRE_PUNCH,      EFFECT_BURN_HIT,           75, FIRE,      100, 15,  10, PHYSICAL
 	move ICE_PUNCH,       EFFECT_FREEZE_HIT,         75, ICE,       100, 15,  10, PHYSICAL
 	move THUNDERPUNCH,    EFFECT_PARALYZE_HIT,       75, ELECTRIC,  100, 15,  10, PHYSICAL
@@ -30,7 +34,7 @@ Moves::
 if DEF(FAITHFUL)
 	move CUT,             EFFECT_NORMAL_HIT,         50, NORMAL,     95, 30,   0, PHYSICAL
 else
-	move CUT,             EFFECT_NORMAL_HIT,         60, STEEL,     100, 30,   0, PHYSICAL
+	move CUT,             EFFECT_NORMAL_HIT,         60, BUG,       100, 30,   0, PHYSICAL
 endc
 	move GUST,            EFFECT_GUST,               40, FLYING,    100, 35,   0, SPECIAL
 	move WING_ATTACK,     EFFECT_NORMAL_HIT,         60, FLYING,    100, 35,   0, PHYSICAL
@@ -90,7 +94,11 @@ endc
 	move ICE_BEAM,        EFFECT_FREEZE_HIT,         90, ICE,       100, 10,  10, SPECIAL
 	move BLIZZARD,        EFFECT_FREEZE_HIT,        110, ICE,        70,  5,  10, SPECIAL
 	move PSYBEAM,         EFFECT_CONFUSE_HIT,        65, PSYCHIC,   100, 20,  10, SPECIAL
+if DEF(FAITHFUL)
 	move BUBBLE_BEAM,     EFFECT_SPEED_DOWN_HIT,     65, WATER,     100, 20,  10, SPECIAL
+else
+	move BUBBLE_BEAM,     EFFECT_SPEED_DOWN_HIT,     60, WATER,     100, 20,  10, SPECIAL
+endc
 	move AURORA_BEAM,     EFFECT_ATTACK_DOWN_HIT,    65, ICE,       100, 20,  10, SPECIAL
 	move HYPER_BEAM,      EFFECT_HYPER_BEAM,        150, NORMAL,     90,  5,   0, SPECIAL
 	move PECK,            EFFECT_NORMAL_HIT,         35, FLYING,    100, 35,   0, PHYSICAL
@@ -146,7 +154,11 @@ endc
 	move DRAGON_PULSE,    EFFECT_NORMAL_HIT,         85, DRAGON,    100, 10,   0, SPECIAL
 	move SCREECH,         EFFECT_DEFENSE_DOWN_2,      0, NORMAL,     85, 40,   0, STATUS
 	move DOUBLE_TEAM,     EFFECT_EVASION_UP,          0, NORMAL,     -1, 15,   0, STATUS
+if DEF(FAITHFUL)
 	move RECOVER,         EFFECT_HEAL,                0, NORMAL,     -1, 5,    0, STATUS
+else
+	move RECOVER,         EFFECT_HEAL,                0, NORMAL,     -1, 10,   0, STATUS
+endc
 	move ROCK_BLAST,      EFFECT_MULTI_HIT,          25, ROCK,       90, 25,   0, PHYSICAL
 	move MINIMIZE,        EFFECT_MINIMIZE,            0, NORMAL,     -1, 10,   0, STATUS
 	move SMOKESCREEN,     EFFECT_ACCURACY_DOWN,       0, NORMAL,    100, 20,   0, STATUS
@@ -183,7 +195,11 @@ endc
 	move ICICLE_SPEAR,    EFFECT_MULTI_HIT,          25, ICE,       100, 30,   0, PHYSICAL
 	move BULLDOZE,        EFFECT_SPEED_DOWN_HIT,     60, GROUND,    100, 20, 100, PHYSICAL
 	move AMNESIA,         EFFECT_SP_DEF_UP_2,         0, PSYCHIC,    -1, 20,   0, STATUS
+if DEF(FAITHFUL)
 	move ROOST,           EFFECT_ROOST,               0, FLYING,     -1, 5,    0, STATUS
+else
+	move ROOST,           EFFECT_ROOST,               0, FLYING,     -1, 10,   0, STATUS
+endc
 	move FRESH_SNACK,     EFFECT_HEAL,                0, NORMAL,     -1, 10,   0, STATUS
 	move HI_JUMP_KICK,    EFFECT_JUMP_KICK,         130, FIGHTING,   90, 10,   0, PHYSICAL
 	move GLARE,           EFFECT_PARALYZE,            0, NORMAL,    100, 30,   0, STATUS
@@ -300,7 +316,11 @@ else
 	move RAPID_SPIN,      EFFECT_RAPID_SPIN,         50, NORMAL,    100, 20, 100, PHYSICAL
 endc
 	move SHADOW_CLAW,     EFFECT_NORMAL_HIT,         70, GHOST,     100, 15,   0, PHYSICAL
+if DEF(FAITHFUL)
 	move IRON_TAIL,       EFFECT_DEFENSE_DOWN_HIT,  100, STEEL,      75, 15,  30, PHYSICAL
+else
+	move IRON_TAIL,       EFFECT_DEFENSE_DOWN_HIT,  100, STEEL,      85, 15,  30, PHYSICAL
+endc
 	move METAL_CLAW,      EFFECT_ATTACK_UP_HIT,      50, STEEL,      95, 35,  10, PHYSICAL
 	move AURA_SPHERE,     EFFECT_ALWAYS_HIT,         80, FIGHTING,   -1, 20,   0, SPECIAL
 	move HEALINGLIGHT,    EFFECT_HEALING_LIGHT,       0, NORMAL,     -1,  5,   0, STATUS
