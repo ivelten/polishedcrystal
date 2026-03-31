@@ -72,12 +72,13 @@ TilesetPortAnim::
 
 TilesetGymAnim::
 	tileframe AnimateWaterTile,         $0:28
-	tileframe DoNothing
-	tileframe DoNothing
-	tileframe DoNothing
 	tileframe AnimateLavaBubbleTile2,   $0:38
 	tileframe AnimateLavaBubbleTile1,   $0:5b
-	tileframe DoNothing
+	tileframe AnimateBigStarTile1,      $1:44
+	tileframe AnimateSmallStarsTile1,   $1:4a
+	tileframe AnimateDoubleStarTile,    $1:50
+	tileframe AnimateBigStarTile2,      $1:45
+	tileframe AnimateSmallStarsTile2,   $1:4b
 	tileframe AnimateWaterfallTiles,    $0:58
 	tileframe StandingTileFrame8
 	tileframe DoneTileAnimation
@@ -236,17 +237,28 @@ TilesetSnowtopMountainAnim::
 	tileframe StandingTileFrame8
 	tileframe DoneTileAnimation
 
-TilesetHideoutAnim::
-	tileframe AnimateSpinnerTile,       $0:07
 TilesetFacilityAnim::
 	tileframe AnimateTurbineTiles,      $0:6c
-	tileframe StandingTileFrame8
+	tileframe AnimateFountainTile,      $0:4d
+	tileframe AnimateTurbineTiles,      $0:6c
+	tileframe DoNothing
+	tileframe AnimateTurbineTiles,      $0:6c
 	tileframe DoNothing
 	tileframe AnimateTurbineTiles,      $0:6c
 	tileframe StandingTileFrame8
+	tileframe AnimateTurbineTiles,      $0:6c
+	tileframe DoneTileAnimation
+
+TilesetHideoutAnim::
+	tileframe AnimateTurbineTiles,      $0:6c
+	tileframe AnimateSpinnerTile,       $0:07
+	tileframe AnimateTurbineTiles,      $0:6c
+	tileframe DoNothing
+	tileframe AnimateTurbineTiles,      $0:6c
 	tileframe DoNothing
 	tileframe AnimateTurbineTiles,      $0:6c
 	tileframe StandingTileFrame8
+	tileframe AnimateTurbineTiles,      $0:6c
 	tileframe DoneTileAnimation
 
 TilesetJohtoHouseAnim::
