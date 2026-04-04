@@ -393,7 +393,7 @@ DEF BETA EQU __trainer_class__
 	const BRENT2
 	const BRENT3
 	const BRENT4
-	const LARRY
+	const POKEMANIAC_LARRY
 	const ANDREW
 	const CALVIN
 	const SHANE
@@ -471,7 +471,7 @@ DEF BETA EQU __trainer_class__
 	const VALENCIA
 	const OLIVIA
 	const CALLIE
-	const CASSANDRA
+	const CASSANDRA ; custom pal
 	const CHARLOTTE
 	const BRIDGET
 	const VERONICA
@@ -659,7 +659,7 @@ DEF BETA EQU __trainer_class__
 	const WINSTON
 	const GERALD
 	const IRVING
-	const TOBIN
+	const TOBIN ; custom pal
 
 	trainerclass LADY
 	const JESSICA
@@ -782,7 +782,7 @@ DEF BETA EQU __trainer_class__
 	trainerclass SCIENTIST
 	const LOWELL
 	const DENNETT
-	const LINDEN
+	const LINDEN ; custom pal
 	const OSKAR
 	const BRAYDON
 	const CARL
@@ -1111,7 +1111,7 @@ DEF BETA EQU __trainer_class__
 
 	trainerclass PIERS
 
-	trainerclass KATY
+	trainerclass LARRY
 
 	trainerclass VICTOR  ; 8e
 
@@ -1171,11 +1171,14 @@ ENDM
 	trainerpal DARK_BIRD_KEEPER
 	trainerpal DARK_POKEFANF
 	trainerpal DARK_LASS
+	trainerpal DARK_BEAUTY
 	trainerpal DARK_SCHOOLGIRL
 	trainerpal DARK_COUPLE
+	trainerpal DARK_RICH_BOY
 	trainerpal DARK_SAILOR
 	trainerpal DARK_SWIMMERM
 	trainerpal DARK_SWIMMERF
+	trainerpal DARK_SCIENTIST
 	trainerpal DARK_TEACHER_F
 	trainerpal DARK_GUITARIST_M
 
