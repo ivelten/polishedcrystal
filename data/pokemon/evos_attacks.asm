@@ -3477,7 +3477,11 @@ endc
 	learnset 66, HYDRO_PUMP
 
 	evos_attacks Feraligatr
+if DEF(FAITHFUL)
 	learnset 1, NIGHT_SLASH ; evolution move
+else
+	learnset 1, CRUNCH ; evolution move
+endc
 	learnset 1, SCRATCH
 	learnset 1, LEER
 	learnset 6, WATER_GUN
@@ -3487,7 +3491,11 @@ endc
 	learnset 21, METAL_CLAW ; Ice Fang → egg move
 	learnset 24, REVERSAL ; Flail → similar move
 	learnset 32, AGILITY
+if DEF(FAITHFUL)
 	learnset 37, CRUNCH
+else
+	learnset 37, DRAGON_CLAW
+endc
 	learnset 45, ANCIENTPOWER ; Chip Away → HGSS tutor move
 	learnset 50, SLASH
 	learnset 56, SCREECH

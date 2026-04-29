@@ -4322,7 +4322,7 @@ BattleCommand_damagecalc:
 	pop de
 
 	; Ability boosts. Some are done elsewhere depending on needs.
-	; May have side effects (Pixilates changes move type here).
+	; May have side effects (Pixilate/Galvanize/Dragonize change move type here).
 	farcall ApplyDamageAbilities
 
 	; If we're burned (and don't have Guts), halve damage

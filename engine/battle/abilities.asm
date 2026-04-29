@@ -325,7 +325,7 @@ AnticipationAbility:
 ; Anticipation considers special types (just Hidden Power is applicable here) as
 ; whatever type they are listed as (e.g. HP is Normal). It will also (as of 5gen)
 ; treat Counter/Mirror Coat (and Metal Burst) as attacking moves of their type.
-; It also ignores Pixilate and Galvanize.
+; It also ignores Pixilate, Galvanize, and Dragonize.
 	ldh a, [hBattleTurn]
 	and a
 	ld hl, wEnemyMonMoves
@@ -1660,6 +1660,7 @@ OffensiveDamageAbilities:
 	dbw GUTS, GutsAbility
 	dbw PIXILATE, PixilateAbility
 	dbw GALVANIZE, GalvanizeAbility
+	dbw DRAGONIZE, DragonizeAbility
 	dbw GORILLA_TACTICS, GorillaTacticsAbility
 	dbw STEELY_SPIRIT, SteelySpiritAbility
 	dbw SHARPNESS, SharpnessAbility
@@ -1873,6 +1874,9 @@ PixilateAbility:
 	jr AteAbilities
 GalvanizeAbility:
 	ld b, ELECTRIC
+	jr AteAbilities
+DragonizeAbility:
+	ld b, DRAGON
 AteAbilities:
 	ld a, BATTLE_VARS_MOVE_TYPE
 	call GetBattleVarAddr

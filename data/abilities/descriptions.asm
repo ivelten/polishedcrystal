@@ -159,6 +159,7 @@ AbilityDescriptions:
 	dw ArmorTailDescription
 	dw MindsEyeDescription
 	dw MegaSolDescription
+	dw DragonizeDescription
 	assert_table_length NUM_ABILITIES
 
 NoAbilityDescription:
@@ -938,4 +939,9 @@ MindsEyeDescription:
 MegaSolDescription:
 	text "Uses moves as if"
 	next "harsh sun is up."
+	done
+
+DragonizeDescription:
+	text "Normal-type moves"
+	next "become Dragon-type."
 	done
